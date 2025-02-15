@@ -1,0 +1,33 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #DADADA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    height: fit-content;
+    background-color: bisque;
+
+    & img {
+        width: 100%;
+    }
+
+    & .informacoes {
+        padding: 0 1rem;
+    }
+
+    & a::before {
+        content: "\2022";
+        padding: 0 0.25rem;
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
